@@ -1,0 +1,122 @@
+[
+  {
+    "id": "faq_001",
+    "question": "How do I create and configure an S3 bucket on AWS for storing training datasets?",
+    "answer": "To create an S3 bucket, log in to the AWS Management Console, navigate to Amazon S3, click 'Create bucket', provide a globally unique name, choose your region, configure encryption, and ensure 'Block Public Access' is enabled for security.",
+    "category": "aws_cloud"
+  },
+  {
+    "id": "faq_002",
+    "question": "What is Amazon SageMaker and how is it used for training machine learning models?",
+    "answer": "Amazon SageMaker is a fully managed service that provides machine learning developers and data scientists with the tools to build, train, tune, and deploy ML models at scale using managed compute instances and pre-built containers.",
+    "category": "aws_cloud"
+  },
+  {
+    "id": "faq_003",
+    "question": "How can I avoid unexpected AWS charges and monitor my cloud spending?",
+    "answer": "Set up AWS Budgets and CloudWatch Billing Alarms to receive email notifications when forecasted or actual costs exceed your threshold. Always shut down or terminate idle EC2 instances and SageMaker notebook endpoints.",
+    "category": "aws_cloud"
+  },
+  {
+    "id": "faq_004",
+    "question": "What are AWS IAM roles and why should I avoid hardcoding root access keys?",
+    "answer": "AWS Identity and Access Management (IAM) roles define temporary security credentials with specific permissions. Hardcoding root or IAM access keys in source code risks credential leaks and account compromise. Use IAM roles attached to instances or environment variables instead.",
+    "category": "aws_cloud"
+  },
+  {
+    "id": "faq_005",
+    "question": "What is Amazon Bedrock and which foundation models are available?",
+    "answer": "Amazon Bedrock is a fully managed service that provides access to leading high-performing foundation models (FMs) from AI companies like Anthropic (Claude), Meta (Llama), AI21 Labs, Cohere, and Amazon Titan via a unified API.",
+    "category": "aws_cloud"
+  },
+  {
+    "id": "faq_006",
+    "question": "What is a vector embedding and how does it represent human language?",
+    "answer": "A vector embedding is a high-dimensional dense numerical representation of text, audio, or images where semantic meaning is preserved. Words and sentences with similar meanings map to vectors that are geometrically close in the embedding vector space.",
+    "category": "machine_learning"
+  },
+  {
+    "id": "faq_007",
+    "question": "Why is cosine similarity preferred over Euclidean distance for text embeddings?",
+    "answer": "Cosine similarity measures the angle between two vectors rather than their magnitude, making it invariant to document length. When embeddings are normalized to unit length (L2 norm = 1.0), cosine similarity equals the dot product of the two vectors.",
+    "category": "machine_learning"
+  },
+  {
+    "id": "faq_008",
+    "question": "What is chunking and why is chunk overlap important in RAG and search pipelines?",
+    "answer": "Chunking splits long documents into smaller segments that fit within model context windows and keep retrieval focused. Overlap retains surrounding context across chunk boundaries, preventing ideas or key terms from being cut in half.",
+    "category": "machine_learning"
+  },
+  {
+    "id": "faq_009",
+    "question": "What is ChromaDB and how does it help with nearest neighbor retrieval?",
+    "answer": "ChromaDB is an open-source, AI-native vector database designed to store embeddings, documents, and metadata. It utilizes approximate nearest neighbor (ANN) search algorithms (like HNSW) to efficiently retrieve the most similar documents to a query vector.",
+    "category": "machine_learning"
+  },
+  {
+    "id": "faq_010",
+    "question": "What is the difference between keyword lexical search and semantic search?",
+    "answer": "Keyword search (such as BM25) matches exact words or synonyms, whereas semantic search compares the contextual meaning of queries and documents using dense vector representations, enabling retrieval even when phrasing differs completely.",
+    "category": "machine_learning"
+  },
+  {
+    "id": "faq_011",
+    "question": "When are weekly lab assignments due in the AASTU AI/ML Cohort?",
+    "answer": "Weekly lab assignments must be submitted every Sunday before 11:59 PM East Africa Time (EAT) through the student portal and GitHub repository links specified in the cohort syllabus.",
+    "category": "academics"
+  },
+  {
+    "id": "faq_012",
+    "question": "What is the grading policy and rubric for weekly hands-on deliverables?",
+    "answer": "Deliverables are evaluated on: code functionality and correctness (40%), clean documentation and README clarity (25%), meaningful git commit history (15%), and answering reflection or extension questions (20%).",
+    "category": "academics"
+  },
+  {
+    "id": "faq_013",
+    "question": "How do I request an extension if I encounter an emergency before the deadline?",
+    "answer": "Notify the course coordinator and your assigned teaching assistant via email at least 24 hours prior to the deadline detailing your circumstance. Extensions are granted on a case-by-case basis.",
+    "category": "academics"
+  },
+  {
+    "id": "faq_014",
+    "question": "What are the attendance requirements to receive the AWS completion certificate?",
+    "answer": "Students must maintain a minimum of 80% attendance across all live lecture sessions and submit all required weekly lab assignments with a cumulative passing score of 70% or higher.",
+    "category": "academics"
+  },
+  {
+    "id": "faq_015",
+    "question": "How can I access GPU instances for hands-on deep learning coursework?",
+    "answer": "Students receive AWS Learner Lab credits and can also utilize Google Colab free T4 GPU runtimes. If additional cloud quota is needed for capstone projects, submit a quota request form to the lab instructor.",
+    "category": "academics"
+  },
+  {
+    "id": "faq_016",
+    "question": "How do I reset my AASTU student portal or course account password?",
+    "answer": "Visit the login portal page, click on 'Forgot Password', enter your university email address, and follow the password reset link sent to your inbox. If you do not receive an email within 10 minutes, check your spam folder.",
+    "category": "support"
+  },
+  {
+    "id": "faq_017",
+    "question": "Who can I contact if I get stuck with environment configuration or installation errors?",
+    "answer": "Post your question and error trace in the official cohort Telegram / Discord community channel #technical-support, or attend daily virtual TA office hours held from 4:00 PM to 6:00 PM EAT.",
+    "category": "support"
+  },
+  {
+    "id": "faq_018",
+    "question": "How do I obtain my AWS Academy / Educate login credentials?",
+    "answer": "AWS Academy invitation emails are dispatched during the first week of the program. Check your university email address for an invitation link from support@awsacademy.com to set up your password.",
+    "category": "support"
+  },
+  {
+    "id": "faq_019",
+    "question": "What should I do if my GitHub repository push is rejected or fails authentication?",
+    "answer": "GitHub requires Personal Access Tokens (PAT) or SSH keys instead of account passwords for Git operations. Generate a PAT with 'repo' scope under GitHub Settings -> Developer Settings -> Personal Access Tokens and use it as your password.",
+    "category": "support"
+  },
+  {
+    "id": "faq_020",
+    "question": "How do I schedule 1-on-1 mentorship sessions with cohort industry mentors?",
+    "answer": "Mentorship slots are published every Monday morning on the cohort dashboard. You can book an available 30-minute consultation slot with your preferred mentor through the Calendly scheduling link.",
+    "category": "support"
+  }
+]
